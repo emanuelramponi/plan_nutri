@@ -221,6 +221,14 @@ button {
   line-height: 1.1;
 }
 
+.etiqueta__extra {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
 .etiqueta__nombre {
   font-weight: 700;
   font-size: clamp(0.72rem, 3.2vw, 0.9rem);
@@ -460,10 +468,17 @@ button {
   background: var(--fondo);
 }
 
+.opcion + .opcion {
+  margin-top: 2px;
+}
+
 .opcion--activa {
-  border-color: var(--acento);
-  background: var(--fondo);
+  background: color-mix(in srgb, var(--acento) 14%, var(--superficie));
   font-weight: 600;
+}
+
+.opcion--activa:hover {
+  background: color-mix(in srgb, var(--acento) 20%, var(--superficie));
 }
 
 .opcion__emoji {
@@ -498,8 +513,14 @@ button {
   border: 1px solid var(--borde);
   display: grid;
   place-items: center;
-  color: var(--acento);
+  color: var(--acento-texto);
   font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.opcion--activa .opcion__check {
+  background: var(--acento);
+  border-color: var(--acento);
 }
 
 .pie {

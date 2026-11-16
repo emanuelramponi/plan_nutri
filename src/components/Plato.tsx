@@ -108,10 +108,13 @@ function EtiquetaSector({ s, linea, onAbrir }: { s: Sector; linea?: LineaPlato; 
   const fijo = esFijo(item)
   let emojis: string
   let nombre: string
+  let extra = ''
   if (esLibre(item)) {
     const lista = linea.alimentos ?? []
-    emojis = lista.map((a) => emojiDe(a)).join('') || '🥗'
-    nombre = lista.map(nombreCorto).join(', ') || 'Elegí verduras'
+    extra = lista.length > 3 ? `+${lista.length - 3}` : ''
+    emojis = lista.slice(0, 3).map((a) => emojiDe(a)).join('') || '🥗'
+    nombre =
+      lista.length === 0 ? 'Elegí verduras' : lista.length > 3 ? `${lista.length} verduras` : lista.map(nombreCorto).join(', ')
   } else {
     emojis = emojiDe(linea.alimento)
     nombre = linea.alimento ? nombreCorto(linea.alimento) : 'Elegí'
@@ -120,7 +123,10 @@ function EtiquetaSector({ s, linea, onAbrir }: { s: Sector; linea?: LineaPlato; 
 
   const contenido = (
     <>
-      <span className="etiqueta__emoji">{emojis}</span>
+      <span className="etiqueta__emoji">
+        {emojis}
+        {extra && <span className="etiqueta__extra">{extra}</span>}
+      </span>
       <span className="etiqueta__nombre">{nombre}</span>
       <span className="etiqueta__cantidad">{linea.cubierto ? linea.notas[0] ?? 'Cubierto' : linea.cantidad}</span>
       {tieneAviso && <span className="etiqueta__alerta" aria-label="Tiene avisos">⚠</span>}
