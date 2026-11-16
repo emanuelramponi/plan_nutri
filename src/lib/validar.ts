@@ -32,6 +32,7 @@ export function validarPlan(plan: Plan): string[] {
         }
         if (!(it.porciones > 0)) errores.push(`${donde}: las porciones tienen que ser mayores a 0.`)
         if (it.grupo === 'proteina' && !it.nivel) errores.push(`${donde}: falta el nivel de proteína.`)
+        if (it.porDefecto && !ids.has(it.porDefecto)) errores.push(`${donde}: el alimento por defecto "${it.porDefecto}" no existe.`)
         for (const id of it.sugeridos ?? []) if (!ids.has(id)) errores.push(`${donde}: el sugerido "${id}" no existe.`)
       }
     }
@@ -48,7 +49,7 @@ export function referenciasDe(plan: Plan, id: string): string[] {
           ? it.fijo === id
           : esLibre(it)
             ? (it.porDefecto ?? []).includes(id)
-            : (it.sugeridos ?? []).includes(id)
+            : (it.sugeridos ?? []).includes(id) || it.porDefecto === id
         if (usa) refs.push(`${c.nombre} › ${v.nombre}`)
       }
   return refs
@@ -66,7 +67,11 @@ export function quitarReferencias(plan: Plan, id: string): Plan {
           .map((it) => {
             if (esFijo(it)) return it
             if (esLibre(it)) return { ...it, porDefecto: it.porDefecto?.filter((x) => x !== id) }
-            return { ...it, sugeridos: it.sugeridos?.filter((x) => x !== id) }
+            return {
+              ...it,
+              sugeridos: it.sugeridos?.filter((x) => x !== id),
+              porDefecto: it.porDefecto === id ? undefined : it.porDefecto,
+            }
           }),
       })),
     })),

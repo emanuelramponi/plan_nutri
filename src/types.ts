@@ -52,6 +52,7 @@ export interface ItemGrupo {
   porciones: number
   sugeridos?: string[]
   soloSugeridos?: boolean
+  porDefecto?: string
 }
 
 export interface ItemLibre {

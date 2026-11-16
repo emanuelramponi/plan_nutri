@@ -252,6 +252,37 @@ export function TabComidas({ plan, onCambiar }: Props) {
                             </span>
                             <span>Cambiar</span>
                           </button>
+                          <div className="form__fila">
+                            <button
+                              className="selector-boton campo--flex"
+                              onClick={() =>
+                                setPicker({
+                                  titulo: 'Por defecto',
+                                  alimentos: it.soloSugeridos
+                                    ? plan.alimentos.filter((a) => (it.sugeridos ?? []).includes(a.id))
+                                    : alimentosDe(it.grupo, it.tipo),
+                                  seleccion: it.porDefecto ? [it.porDefecto] : [],
+                                  multiple: false,
+                                  aplicar: (ids) => cambiarItem(ci, vi, ii, { ...it, porDefecto: ids[0] }),
+                                })
+                              }
+                            >
+                              <span className="selector-boton__texto">
+                                <small>Por defecto</small>
+                                {it.porDefecto ? nombreDe(it.porDefecto) : 'Al azar'}
+                              </span>
+                              <span>Cambiar</span>
+                            </button>
+                            {it.porDefecto && (
+                              <button
+                                className="boton-icono"
+                                onClick={() => cambiarItem(ci, vi, ii, { ...it, porDefecto: undefined })}
+                                aria-label="Quitar alimento por defecto"
+                              >
+                                ✕
+                              </button>
+                            )}
+                          </div>
                           <label className="check">
                             <input
                               type="checkbox"

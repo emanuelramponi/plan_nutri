@@ -98,6 +98,8 @@ export function armarPlato(plan: Plan, comidaId: string, variante: Variante): Se
       return elegidos
     }
 
+    if (item.porDefecto && plan.alimentos.some((a) => a.id === item.porDefecto)) return item.porDefecto
+
     const sugeridos = item.sugeridos ?? []
     const pesos = opciones
       .map((a) => {

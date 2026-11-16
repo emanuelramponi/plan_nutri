@@ -1525,7 +1525,8 @@
               "porciones": 1.5,
               "sugeridos": [
                 "pollo"
-              ]
+              ],
+              "porDefecto": "atun"
             },
             {
               "grupo": "fibra",
@@ -1629,7 +1630,8 @@
               "sugeridos": [
                 "merluza",
                 "atun"
-              ]
+              ],
+              "porDefecto": "pollo"
             },
             {
               "grupo": "fibra",
