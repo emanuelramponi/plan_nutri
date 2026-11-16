@@ -60,6 +60,7 @@
     {
       "id": "pan-integral",
       "nombre": "Pan integral casero",
+      "emoji": "🍞",
       "grupo": "hc",
       "porcion": {
         "cantidad": 1,
@@ -75,6 +76,7 @@
     {
       "id": "avena",
       "nombre": "Avena",
+      "emoji": "🥣",
       "grupo": "hc",
       "porcion": {
         "cantidad": 2,
@@ -89,6 +91,7 @@
     {
       "id": "harina-integral",
       "nombre": "Harina integral / premezcla",
+      "emoji": "🌾",
       "grupo": "hc",
       "porcion": {
         "cantidad": 2,
@@ -103,6 +106,7 @@
     {
       "id": "quinoa-pop",
       "nombre": "Quinoa pop",
+      "emoji": "🍿",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.5,
@@ -117,6 +121,7 @@
     {
       "id": "granola",
       "nombre": "Granola sin azúcar",
+      "emoji": "🥣",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.5,
@@ -131,6 +136,7 @@
     {
       "id": "copos-maiz",
       "nombre": "Copos de maíz",
+      "emoji": "🥣",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.5,
@@ -144,6 +150,7 @@
     {
       "id": "banana-hc",
       "nombre": "Banana chica",
+      "emoji": "🍌",
       "grupo": "hc",
       "porcion": {
         "cantidad": 1,
@@ -158,6 +165,7 @@
     {
       "id": "galletas-arroz",
       "nombre": "Galletas de arroz",
+      "emoji": "🍘",
       "grupo": "hc",
       "porcion": {
         "cantidad": 2,
@@ -171,6 +179,7 @@
     {
       "id": "arroz-integral",
       "nombre": "Arroz integral cocido",
+      "emoji": "🍚",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.33,
@@ -185,6 +194,7 @@
     {
       "id": "quinoa",
       "nombre": "Quinoa cocida",
+      "emoji": "🍚",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.33,
@@ -199,6 +209,7 @@
     {
       "id": "polenta",
       "nombre": "Polenta cocida",
+      "emoji": "🌽",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.33,
@@ -213,6 +224,7 @@
     {
       "id": "mijo",
       "nombre": "Mijo cocido",
+      "emoji": "🍚",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.33,
@@ -227,6 +239,7 @@
     {
       "id": "cuscus",
       "nombre": "Cuscús cocido",
+      "emoji": "🍚",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.33,
@@ -241,6 +254,7 @@
     {
       "id": "cebada",
       "nombre": "Cebada cocida",
+      "emoji": "🌾",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.33,
@@ -255,6 +269,7 @@
     {
       "id": "fideos-integrales",
       "nombre": "Fideos integrales cocidos",
+      "emoji": "🍝",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.5,
@@ -270,6 +285,7 @@
     {
       "id": "legumbres-hc",
       "nombre": "Legumbres cocidas (lentejas, porotos, garbanzos)",
+      "emoji": "🫘",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.5,
@@ -285,6 +301,7 @@
     {
       "id": "papa",
       "nombre": "Papa",
+      "emoji": "🥔",
       "grupo": "hc",
       "porcion": {
         "cantidad": 100,
@@ -299,6 +316,7 @@
     {
       "id": "batata",
       "nombre": "Batata",
+      "emoji": "🍠",
       "grupo": "hc",
       "porcion": {
         "cantidad": 100,
@@ -313,6 +331,7 @@
     {
       "id": "choclo",
       "nombre": "Choclo",
+      "emoji": "🌽",
       "grupo": "hc",
       "porcion": {
         "cantidad": 100,
@@ -327,6 +346,7 @@
     {
       "id": "barrita-cereal",
       "nombre": "Barrita de cereal integral (Crudda, Kibar, Iron Bar)",
+      "emoji": "🍫",
       "grupo": "hc",
       "porcion": {
         "cantidad": 1,
@@ -340,6 +360,7 @@
     {
       "id": "galletitas-integrales",
       "nombre": "Galletitas integrales",
+      "emoji": "🍪",
       "grupo": "hc",
       "porcion": {
         "cantidad": 3,
@@ -353,6 +374,7 @@
     {
       "id": "pancake-granger",
       "nombre": "Pancake Granger",
+      "emoji": "🥞",
       "grupo": "hc",
       "porcion": {
         "cantidad": 1,
@@ -366,6 +388,7 @@
     {
       "id": "masa-tarta",
       "nombre": "Masa de tarta",
+      "emoji": "🥧",
       "grupo": "hc",
       "porcion": {
         "cantidad": 0.125,
@@ -379,6 +402,7 @@
     {
       "id": "tapa-empanada",
       "nombre": "Tapa de empanada",
+      "emoji": "🥟",
       "grupo": "hc",
       "porcion": {
         "cantidad": 1,
@@ -392,6 +416,7 @@
     {
       "id": "rapidita",
       "nombre": "Rapidita",
+      "emoji": "🫓",
       "grupo": "hc",
       "porcion": {
         "cantidad": 1,
@@ -405,6 +430,7 @@
     {
       "id": "atun",
       "nombre": "Atún al natural desmenuzado",
+      "emoji": "🐟",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -420,6 +446,7 @@
     {
       "id": "merluza",
       "nombre": "Merluza",
+      "emoji": "🐟",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -434,6 +461,7 @@
     {
       "id": "arrolladito-merluza",
       "nombre": "Arrolladito de merluza",
+      "emoji": "🐟",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -449,6 +477,7 @@
     {
       "id": "gatuzo",
       "nombre": "Gatuzo",
+      "emoji": "🐟",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -463,6 +492,7 @@
     {
       "id": "abadejo",
       "nombre": "Abadejo",
+      "emoji": "🐟",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -477,6 +507,7 @@
     {
       "id": "lenguado",
       "nombre": "Lenguado",
+      "emoji": "🐟",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -491,6 +522,7 @@
     {
       "id": "pollo",
       "nombre": "Pechuga de pollo (suprema en cubos)",
+      "emoji": "🍗",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -506,6 +538,7 @@
     {
       "id": "solomillo-cerdo",
       "nombre": "Solomillo de cerdo",
+      "emoji": "🥩",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -521,6 +554,7 @@
     {
       "id": "bola-lomo-cerdo",
       "nombre": "Bola de lomo de cerdo",
+      "emoji": "🥩",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -536,6 +570,7 @@
     {
       "id": "carne-magra",
       "nombre": "Carne vacuna magra (nalga, peceto, cuadril, lomo, cuadrada)",
+      "emoji": "🥩",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -551,6 +586,7 @@
     {
       "id": "milanesa-bola-lomo",
       "nombre": "Milanesa de bola de lomo al horno (pan rallado integral)",
+      "emoji": "🍖",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -575,6 +611,7 @@
     {
       "id": "carne-trabajo",
       "nombre": "Carne (comida del trabajo)",
+      "emoji": "🥩",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -592,6 +629,7 @@
     {
       "id": "proteina-polvo",
       "nombre": "Proteína en polvo",
+      "emoji": "🥤",
       "grupo": "proteina",
       "nivel": "alta",
       "porcion": {
@@ -607,6 +645,7 @@
     {
       "id": "huevo",
       "nombre": "Huevo entero (revuelto o hervido)",
+      "emoji": "🥚",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -619,6 +658,7 @@
     {
       "id": "claras",
       "nombre": "Claras de huevo",
+      "emoji": "🥚",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -634,6 +674,7 @@
     {
       "id": "claras-polvo",
       "nombre": "Claras en polvo",
+      "emoji": "🥚",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -649,6 +690,7 @@
     {
       "id": "yogur-casero",
       "nombre": "Yogur casero descremado",
+      "emoji": "🥛",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -666,6 +708,7 @@
     {
       "id": "yogur-bebible",
       "nombre": "Yogur bebible descremado",
+      "emoji": "🥛",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -682,6 +725,7 @@
     {
       "id": "leche",
       "nombre": "Leche descremada",
+      "emoji": "🥛",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -697,6 +741,7 @@
     {
       "id": "leche-polvo",
       "nombre": "Leche en polvo descremada",
+      "emoji": "🥛",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -712,6 +757,7 @@
     {
       "id": "lomo-cerdo-cocido",
       "nombre": "Lomo de cerdo cocido (fiambre)",
+      "emoji": "🥓",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -727,6 +773,7 @@
     {
       "id": "jamon-cocido",
       "nombre": "Jamón cocido",
+      "emoji": "🥓",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -742,6 +789,7 @@
     {
       "id": "queso-untable",
       "nombre": "Queso untable descremado",
+      "emoji": "🧀",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -757,6 +805,7 @@
     {
       "id": "ricota",
       "nombre": "Ricota magra",
+      "emoji": "🧀",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -773,6 +822,7 @@
     {
       "id": "port-salut",
       "nombre": "Queso Port Salut light (porción chica)",
+      "emoji": "🧀",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -790,6 +840,7 @@
     {
       "id": "queso-maquina",
       "nombre": "Queso de máquina",
+      "emoji": "🧀",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -806,6 +857,7 @@
     {
       "id": "legumbres-prot",
       "nombre": "Legumbres cocidas",
+      "emoji": "🫘",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -820,6 +872,7 @@
     {
       "id": "waffle-granger",
       "nombre": "Waffle proteico Granger (mezcla keto)",
+      "emoji": "🧇",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
@@ -851,6 +904,7 @@
     {
       "id": "tomate",
       "nombre": "Tomate",
+      "emoji": "🍅",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B",
@@ -863,6 +917,7 @@
     {
       "id": "lechuga",
       "nombre": "Lechuga",
+      "emoji": "🥬",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -875,6 +930,7 @@
     {
       "id": "zanahoria",
       "nombre": "Zanahoria",
+      "emoji": "🥕",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B",
@@ -887,6 +943,7 @@
     {
       "id": "cebolla",
       "nombre": "Cebolla",
+      "emoji": "🧅",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B",
@@ -895,6 +952,7 @@
     {
       "id": "remolacha",
       "nombre": "Remolacha",
+      "emoji": "🟣",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B",
@@ -903,6 +961,7 @@
     {
       "id": "brocoli",
       "nombre": "Brócoli",
+      "emoji": "🥦",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -911,6 +970,7 @@
     {
       "id": "acelga",
       "nombre": "Acelga",
+      "emoji": "🥬",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -922,6 +982,7 @@
     {
       "id": "espinaca",
       "nombre": "Espinaca",
+      "emoji": "🥬",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -933,6 +994,7 @@
     {
       "id": "rucula",
       "nombre": "Rúcula",
+      "emoji": "🌿",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -944,6 +1006,7 @@
     {
       "id": "morron",
       "nombre": "Morrón",
+      "emoji": "🫑",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -955,6 +1018,7 @@
     {
       "id": "calabaza",
       "nombre": "Calabaza / zapallo",
+      "emoji": "🎃",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B",
@@ -966,6 +1030,7 @@
     {
       "id": "berenjena",
       "nombre": "Berenjena",
+      "emoji": "🍆",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -977,6 +1042,7 @@
     {
       "id": "zapallito",
       "nombre": "Zapallito / zucchini",
+      "emoji": "🥒",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A",
@@ -988,6 +1054,7 @@
     {
       "id": "pure-tomate",
       "nombre": "Puré de tomate",
+      "emoji": "🍅",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B",
@@ -999,6 +1066,7 @@
     {
       "id": "apio",
       "nombre": "Apio",
+      "emoji": "🌿",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1006,6 +1074,7 @@
     {
       "id": "coles-bruselas",
       "nombre": "Coles de Bruselas",
+      "emoji": "🥬",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1013,6 +1082,7 @@
     {
       "id": "coliflor",
       "nombre": "Coliflor",
+      "emoji": "🥦",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1020,6 +1090,7 @@
     {
       "id": "esparragos",
       "nombre": "Espárragos",
+      "emoji": "🌱",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1027,6 +1098,7 @@
     {
       "id": "pepino",
       "nombre": "Pepino",
+      "emoji": "🥒",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1034,6 +1106,7 @@
     {
       "id": "rabanitos",
       "nombre": "Rabanitos",
+      "emoji": "🔴",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1041,6 +1114,7 @@
     {
       "id": "radicha",
       "nombre": "Radicha",
+      "emoji": "🥬",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1048,6 +1122,7 @@
     {
       "id": "nabiza",
       "nombre": "Nabiza",
+      "emoji": "🥬",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "A"
@@ -1055,6 +1130,7 @@
     {
       "id": "arvejas-frescas",
       "nombre": "Arvejas frescas",
+      "emoji": "🫛",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B"
@@ -1062,6 +1138,7 @@
     {
       "id": "cebolla-verdeo",
       "nombre": "Cebolla de verdeo",
+      "emoji": "🧅",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B"
@@ -1069,6 +1146,7 @@
     {
       "id": "chauchas",
       "nombre": "Chauchas",
+      "emoji": "🫛",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B"
@@ -1076,6 +1154,7 @@
     {
       "id": "puerro",
       "nombre": "Puerro",
+      "emoji": "🧅",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B"
@@ -1083,6 +1162,7 @@
     {
       "id": "nabo",
       "nombre": "Nabo",
+      "emoji": "⚪",
       "grupo": "fibra",
       "tipo": "verdura",
       "grupoVegetal": "B"
@@ -1090,6 +1170,7 @@
     {
       "id": "naranja",
       "nombre": "Naranja",
+      "emoji": "🍊",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1100,6 +1181,7 @@
     {
       "id": "mandarina",
       "nombre": "Mandarina",
+      "emoji": "🍊",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1110,6 +1192,7 @@
     {
       "id": "kiwi",
       "nombre": "Kiwi",
+      "emoji": "🥝",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1120,6 +1203,7 @@
     {
       "id": "banana",
       "nombre": "Banana",
+      "emoji": "🍌",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1130,6 +1214,7 @@
     {
       "id": "frutos-rojos",
       "nombre": "Frutos rojos",
+      "emoji": "🫐",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1140,6 +1225,7 @@
     {
       "id": "frutillas",
       "nombre": "Frutillas",
+      "emoji": "🍓",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1150,6 +1236,7 @@
     {
       "id": "manzana",
       "nombre": "Manzana",
+      "emoji": "🍎",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1161,6 +1248,7 @@
     {
       "id": "pera",
       "nombre": "Pera",
+      "emoji": "🍐",
       "grupo": "fibra",
       "tipo": "fruta",
       "porcion": {
@@ -1172,6 +1260,7 @@
     {
       "id": "aceite-oliva",
       "nombre": "Aceite de oliva",
+      "emoji": "🫒",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 1,
@@ -1187,6 +1276,7 @@
     {
       "id": "nueces",
       "nombre": "Nueces",
+      "emoji": "🌰",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 2.5,
@@ -1202,6 +1292,7 @@
     {
       "id": "semillas",
       "nombre": "Semillas (chía, lino, sésamo, girasol, zapallo)",
+      "emoji": "🌻",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 1,
@@ -1216,6 +1307,7 @@
     {
       "id": "palta",
       "nombre": "Palta",
+      "emoji": "🥑",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 0.25,
@@ -1225,6 +1317,7 @@
     {
       "id": "pasta-mani",
       "nombre": "Pasta de maní / nuez / almendra",
+      "emoji": "🥜",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 2,
@@ -1239,6 +1332,7 @@
     {
       "id": "mani",
       "nombre": "Maníes",
+      "emoji": "🥜",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 10,
@@ -1253,6 +1347,7 @@
     {
       "id": "almendras",
       "nombre": "Almendras",
+      "emoji": "🌰",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 5,
@@ -1267,6 +1362,7 @@
     {
       "id": "aceitunas",
       "nombre": "Aceitunas",
+      "emoji": "🫒",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 10,
@@ -1280,6 +1376,7 @@
     {
       "id": "crema-leche",
       "nombre": "Crema de leche",
+      "emoji": "🥛",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 1,
@@ -1290,6 +1387,7 @@
     {
       "id": "manteca",
       "nombre": "Manteca",
+      "emoji": "🧈",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 1,
@@ -1300,6 +1398,7 @@
     {
       "id": "queso-rallado",
       "nombre": "Queso rallado / duro",
+      "emoji": "🧀",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 30,
@@ -1314,6 +1413,7 @@
     {
       "id": "mayonesa-light",
       "nombre": "Mayonesa light",
+      "emoji": "🥫",
       "grupo": "grasa",
       "porcion": {
         "cantidad": 1,
@@ -1328,11 +1428,13 @@
     {
       "id": "infusion",
       "nombre": "Infusión (té, mate, café)",
+      "emoji": "☕",
       "grupo": "otros"
     },
     {
       "id": "barra-b3st",
       "nombre": "Barra proteica BNB B3ST!",
+      "emoji": "🍫",
       "grupo": "otros",
       "porcion": {
         "cantidad": 1,

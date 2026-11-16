@@ -18,6 +18,7 @@ export interface Ocupa {
 export interface Alimento {
   id: string
   nombre: string
+  emoji?: string
   grupo: GrupoId
   nivel?: NivelProteina
   tipo?: TipoFibra

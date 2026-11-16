@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
-import { ItemPlato } from './components/ItemPlato'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { PanelAlimentos } from './components/PanelAlimentos'
+import { Plato, nombreCorto } from './components/Plato'
 import { cargarPlanRemoto, planEmbebido } from './lib/cargarPlan'
 import { armarPlato, calcularPlato } from './lib/plato'
 import type { Plan, Seleccion } from './types'
@@ -46,21 +47,32 @@ export default function App() {
   const comida = plan.comidas.find((c) => c.id === comidaId) ?? plan.comidas[0]
   const variante = comida.variantes.find((v) => v.id === varianteIds[comida.id]) ?? comida.variantes[0]
   const clave = `${comida.id}:${variante.id}`
-  const seleccion = platos[clave]
+  const guardada = platos[clave]
+  const valida = !!guardada && guardada.length === variante.items.length
+  const nueva = useMemo(
+    () => (valida ? null : armarPlato(plan, comida.id, variante)),
+    [valida, plan, comida.id, variante],
+  )
+  const seleccion = valida ? guardada : nueva!
 
   useEffect(() => {
-    if (!seleccion || seleccion.length !== variante.items.length) {
-      setPlatos((p) => ({ ...p, [clave]: armarPlato(plan, comida.id, variante) }))
-    }
-  }, [clave, seleccion, plan, variante])
+    if (nueva) setPlatos((p) => ({ ...p, [clave]: nueva }))
+  }, [nueva, clave])
 
-  const calculado = useMemo(
-    () => (seleccion ? calcularPlato(plan, variante, seleccion) : null),
-    [plan, variante, seleccion],
-  )
+  const calculado = useMemo(() => calcularPlato(plan, variante, seleccion), [plan, variante, seleccion])
+
+  const [abierto, setAbierto] = useState<number | null>(null)
+  const cerrarPanel = useCallback(() => setAbierto(null), [])
 
   const cambiar = (i: number, s: Seleccion) =>
-    setPlatos((p) => ({ ...p, [clave]: p[clave].map((x, k) => (k === i ? s : x)) }))
+    setPlatos((p) => ({ ...p, [clave]: seleccion.map((x, k) => (k === i ? s : x)) }))
+
+  const detalles = calculado
+    ? calculado.lineas.flatMap((l) => {
+        const nombre = l.alimento ? `${l.alimento.emoji ?? ''} ${nombreCorto(l.alimento)}` : ''
+        return [...l.avisos.map((t) => ({ nombre, texto: t, aviso: true })), ...l.notas.map((t) => ({ nombre, texto: t, aviso: false }))]
+      })
+    : []
 
   return (
     <div className="app">
@@ -71,7 +83,7 @@ export default function App() {
             <button
               key={c.id}
               className={`comidas__tab ${c.id === comida.id ? 'comidas__tab--activa' : ''}`}
-              onClick={() => setComidaId(c.id)}
+              onClick={() => { setComidaId(c.id); setAbierto(null) }}
             >
               {c.nombre}
             </button>
@@ -104,21 +116,36 @@ export default function App() {
         </button>
 
         {calculado && (
-          <section className="plato">
-            {calculado.avisosGenerales.map((a) => (
-              <p key={a} className="aviso aviso--general">⚠ {a}</p>
-            ))}
-            {calculado.lineas.map((linea, i) => (
-              <ItemPlato
-                key={`${clave}-${i}`}
+          <>
+            <Plato plan={plan} variante={variante} calculado={calculado} activo={abierto} onAbrir={setAbierto} />
+            <p className="ayuda">Tocá una parte del plato para cambiarla</p>
+
+            {(calculado.avisosGenerales.length > 0 || detalles.length > 0) && (
+              <section className="detalles">
+                {calculado.avisosGenerales.map((a) => (
+                  <p key={a} className="aviso aviso--general">⚠ {a}</p>
+                ))}
+                {detalles.map((d, k) => (
+                  <p key={k} className={d.aviso ? 'detalle detalle--aviso' : 'detalle'}>
+                    <strong>{d.nombre}</strong> {d.aviso ? '⚠ ' : ''}
+                    {d.texto}
+                  </p>
+                ))}
+              </section>
+            )}
+
+            {abierto !== null && calculado.lineas[abierto] && (
+              <PanelAlimentos
+                key={`${clave}-${abierto}`}
                 plan={plan}
-                linea={linea}
+                linea={calculado.lineas[abierto]}
                 comidaId={comida.id}
-                seleccion={seleccion[i]}
-                onCambiar={(s) => cambiar(i, s)}
+                seleccion={seleccion[abierto]}
+                onCambiar={(s) => cambiar(abierto, s)}
+                onCerrar={cerrarPanel}
               />
-            ))}
-          </section>
+            )}
+          </>
         )}
 
         <p className="pie">💧 2 vasos de agua con cada comida</p>
