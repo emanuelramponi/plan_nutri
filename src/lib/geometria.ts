@@ -15,12 +15,12 @@ export function punto(r: number, grados: number): [number, number] {
   return [CENTRO + r * Math.sin(rad), CENTRO - r * Math.cos(rad)]
 }
 
-export function caminoSector(s: Sector): string {
+export function caminoSector(s: Sector, r = RADIO): string {
   if (s.fin - s.inicio >= 359.9) return ''
-  const [x1, y1] = punto(RADIO, s.inicio)
-  const [x2, y2] = punto(RADIO, s.fin)
+  const [x1, y1] = punto(r, s.inicio)
+  const [x2, y2] = punto(r, s.fin)
   const grande = s.fin - s.inicio > 180 ? 1 : 0
-  return `M ${CENTRO} ${CENTRO} L ${x1} ${y1} A ${RADIO} ${RADIO} 0 ${grande} 1 ${x2} ${y2} Z`
+  return `M ${CENTRO} ${CENTRO} L ${x1} ${y1} A ${r} ${r} 0 ${grande} 1 ${x2} ${y2} Z`
 }
 
 export function centroEtiqueta(s: Sector): [number, number] {

@@ -38,6 +38,15 @@ export function Plato({ plan, variante, calculado, activo, onAbrir }: Props) {
           {sectores.map((s, k) => (
             <FormaSector key={k} s={s} color={s.index !== null ? colorDe(plan, calculado.lineas[s.index]) : undefined} activo={s.index !== null && s.index === activo} />
           ))}
+          {sectores.map((s, k) =>
+            s.index !== null && calculado.lineas[s.index].etiquetaAviso && !calculado.lineas[s.index].cubierto ? (
+              s.fin - s.inicio >= 359.9 ? (
+                <circle key={`a${k}`} cx={CENTRO} cy={CENTRO} r={RADIO - 2} className="sector-alerta" />
+              ) : (
+                <path key={`a${k}`} d={caminoSector(s, RADIO - 2)} className="sector-alerta" />
+              )
+            ) : null,
+          )}
         </svg>
         {sectores.map((s, k) => (
           <EtiquetaSector key={k} s={s} linea={s.index !== null ? calculado.lineas[s.index] : undefined} onAbrir={onAbrir} />
@@ -129,8 +138,7 @@ function EtiquetaSector({ s, linea, onAbrir }: { s: Sector; linea?: LineaPlato; 
       </span>
       <span className="etiqueta__nombre">{nombre}</span>
       <span className="etiqueta__cantidad">{linea.cubierto ? linea.notas[0] ?? 'Cubierto' : linea.cantidad}</span>
-      {linea.etiquetaAviso && !linea.cubierto && <span className="etiqueta__pastilla">⚠ {linea.etiquetaAviso}</span>}
-      {tieneAviso && !linea.etiquetaAviso && <span className="etiqueta__alerta" aria-label="Tiene avisos">⚠</span>}
+      {tieneAviso && <span className="etiqueta__alerta" aria-label="Tiene avisos">⚠</span>}
     </>
   )
 
