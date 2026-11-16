@@ -98,7 +98,7 @@ export function PanelAlimentos({ plan, linea, comidaId, seleccion, onCambiar, on
           placeholder="Buscar por nombre…"
           value={busqueda}
           onChange={(e) => setBusqueda(e.target.value)}
-          autoFocus
+          autoFocus={window.matchMedia('(pointer: fine)').matches}
         />
         <div className="panel__lista">
           {lista.length === 0 && <p className="panel__vacio">No hay alimentos con “{busqueda}”.</p>}
