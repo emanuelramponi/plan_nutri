@@ -789,7 +789,7 @@
     },
     {
       "id": "queso-untable",
-      "nombre": "Queso untable descremado",
+      "nombre": "Queso crema light (untable)",
       "emoji": "🧀",
       "grupo": "proteina",
       "nivel": "media",
@@ -801,7 +801,8 @@
         "desayuno",
         "merienda",
         "colacion"
-      ]
+      ],
+      "favorito": true
     },
     {
       "id": "ricota",
@@ -1328,7 +1329,8 @@
         "desayuno",
         "merienda",
         "colacion"
-      ]
+      ],
+      "favorito": true
     },
     {
       "id": "mani",
@@ -1493,6 +1495,13 @@
                 "mandarina",
                 "naranja",
                 "kiwi"
+              ]
+            },
+            {
+              "grupo": "grasa",
+              "porciones": 1,
+              "sugeridos": [
+                "pasta-mani"
               ]
             }
           ]
