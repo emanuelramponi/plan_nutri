@@ -1,0 +1,1564 @@
+{
+  "version": "2026-11",
+  "reglas": {
+    "conversionEntreNivelesProteina": "permitida-con-aviso",
+    "frutaSoloPorFruta": true,
+    "verduraSoloPorVerdura": true,
+    "priorizarFavoritos": true,
+    "avisarSiOcupaGrupoAusente": true
+  },
+  "grupos": [
+    {
+      "id": "hc",
+      "nombre": "Hidratos de carbono",
+      "color": "#F7F08A",
+      "nota": "1 porción = 15-20g de carbohidrato. Elegir integrales."
+    },
+    {
+      "id": "proteina",
+      "nombre": "Proteínas",
+      "color": "#F2C0A2",
+      "nota": "Priorizar proteínas magras.",
+      "niveles": [
+        {
+          "id": "alta",
+          "nombre": "20-25g proteína",
+          "gramosProteina": 22.5
+        },
+        {
+          "id": "media",
+          "nombre": "8-10g proteína",
+          "gramosProteina": 9
+        }
+      ]
+    },
+    {
+      "id": "fibra",
+      "nombre": "Verduras y frutas",
+      "color": "#B5C9A8",
+      "nota": "Combinar crudos y cocidos, variar colores."
+    },
+    {
+      "id": "grasa",
+      "nombre": "Grasas",
+      "color": "#A8B5D8",
+      "nota": "1 porción = 5g de grasa. Grasas saturadas: evitar."
+    },
+    {
+      "id": "otros",
+      "nombre": "Otros",
+      "color": "#E0E0E0"
+    }
+  ],
+  "avisos": {
+    "moderado-grasa": "Moderado en grasa",
+    "evitar": "Grasa saturada: evitar",
+    "conversion-nivel": "No es la equivalencia recomendada por la tabla (cantidad convertida por gramos de proteína)",
+    "estimado": "Valor estimado, confirmar con la nutri"
+  },
+  "alimentos": [
+    {
+      "id": "pan-integral",
+      "nombre": "Pan integral casero",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "rebanada",
+        "gramos": 30
+      },
+      "favorito": true,
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "avena",
+      "nombre": "Avena",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cda",
+        "gramos": 30
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "harina-integral",
+      "nombre": "Harina integral / premezcla",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cda",
+        "gramos": 30
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "quinoa-pop",
+      "nombre": "Quinoa pop",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza",
+        "gramos": 30
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "granola",
+      "nombre": "Granola sin azúcar",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza",
+        "gramos": 30
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "copos-maiz",
+      "nombre": "Copos de maíz",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "banana-hc",
+      "nombre": "Banana chica",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad",
+        "gramos": 100
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "galletas-arroz",
+      "nombre": "Galletas de arroz",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "arroz-integral",
+      "nombre": "Arroz integral cocido",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.33,
+        "unidad": "taza",
+        "gramos": 55
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "quinoa",
+      "nombre": "Quinoa cocida",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.33,
+        "unidad": "taza",
+        "gramos": 55
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "polenta",
+      "nombre": "Polenta cocida",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.33,
+        "unidad": "taza",
+        "gramos": 55
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "mijo",
+      "nombre": "Mijo cocido",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.33,
+        "unidad": "taza",
+        "gramos": 55
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "cuscus",
+      "nombre": "Cuscús cocido",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.33,
+        "unidad": "taza",
+        "gramos": 55
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "cebada",
+      "nombre": "Cebada cocida",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.33,
+        "unidad": "taza",
+        "gramos": 55
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "fideos-integrales",
+      "nombre": "Fideos integrales cocidos",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza",
+        "gramos": 80
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "legumbres-hc",
+      "nombre": "Legumbres cocidas (lentejas, porotos, garbanzos)",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza",
+        "gramos": 100
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "papa",
+      "nombre": "Papa",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "batata",
+      "nombre": "Batata",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "choclo",
+      "nombre": "Choclo",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "barrita-cereal",
+      "nombre": "Barrita de cereal integral (Crudda, Kibar, Iron Bar)",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "galletitas-integrales",
+      "nombre": "Galletitas integrales",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 3,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "pancake-granger",
+      "nombre": "Pancake Granger",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "porción"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "masa-tarta",
+      "nombre": "Masa de tarta",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 0.125,
+        "unidad": "masa"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "tapa-empanada",
+      "nombre": "Tapa de empanada",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "rapidita",
+      "nombre": "Rapidita",
+      "grupo": "hc",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "atun",
+      "nombre": "Atún al natural desmenuzado",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "merluza",
+      "nombre": "Merluza",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "arrolladito-merluza",
+      "nombre": "Arrolladito de merluza",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "gatuzo",
+      "nombre": "Gatuzo",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "abadejo",
+      "nombre": "Abadejo",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "lenguado",
+      "nombre": "Lenguado",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "pollo",
+      "nombre": "Pechuga de pollo (suprema en cubos)",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "solomillo-cerdo",
+      "nombre": "Solomillo de cerdo",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "bola-lomo-cerdo",
+      "nombre": "Bola de lomo de cerdo",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "carne-magra",
+      "nombre": "Carne vacuna magra (nalga, peceto, cuadril, lomo, cuadrada)",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "aviso": "moderado-grasa",
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "milanesa-bola-lomo",
+      "nombre": "Milanesa de bola de lomo al horno (pan rallado integral)",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "aviso": "moderado-grasa",
+      "favorito": true,
+      "ocupa": [
+        {
+          "grupo": "hc",
+          "porciones": 1,
+          "aviso": "estimado",
+          "nota": "El pan rallado reemplaza al carbohidrato del plato"
+        }
+      ],
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "carne-trabajo",
+      "nombre": "Carne (comida del trabajo)",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      "aviso": "moderado-grasa",
+      "favorito": true,
+      "nota": "Ajustar a ¼ de plato",
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "proteina-polvo",
+      "nombre": "Proteína en polvo",
+      "grupo": "proteina",
+      "nivel": "alta",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "scoop"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "huevo",
+      "nombre": "Huevo entero (revuelto o hervido)",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad"
+      },
+      "aviso": "moderado-grasa",
+      "favorito": true
+    },
+    {
+      "id": "claras",
+      "nombre": "Claras de huevo",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 3,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "claras-polvo",
+      "nombre": "Claras en polvo",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cda"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "yogur-casero",
+      "nombre": "Yogur casero descremado",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "vaso",
+        "gramos": 175
+      },
+      "favorito": true,
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "yogur-bebible",
+      "nombre": "Yogur bebible descremado",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "vaso"
+      },
+      "favorito": true,
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "leche",
+      "nombre": "Leche descremada",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "vaso"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "leche-polvo",
+      "nombre": "Leche en polvo descremada",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cda"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "lomo-cerdo-cocido",
+      "nombre": "Lomo de cerdo cocido (fiambre)",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 4,
+        "unidad": "feta"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "jamon-cocido",
+      "nombre": "Jamón cocido",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "feta"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "queso-untable",
+      "nombre": "Queso untable descremado",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cda"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "ricota",
+      "nombre": "Ricota magra",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cda",
+        "gramos": 30
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "port-salut",
+      "nombre": "Queso Port Salut light (porción chica)",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "casette"
+      },
+      "aviso": "moderado-grasa",
+      "favorito": true,
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "queso-maquina",
+      "nombre": "Queso de máquina",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "feta"
+      },
+      "aviso": "moderado-grasa",
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "legumbres-prot",
+      "nombre": "Legumbres cocidas",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "waffle-granger",
+      "nombre": "Waffle proteico Granger (mezcla keto)",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 3,
+        "unidad": "cda",
+        "gramos": 37.5
+      },
+      "favorito": true,
+      "nutricionPor100g": {
+        "kcal": 432,
+        "hc": 24,
+        "proteina": 26,
+        "grasa": 25.6,
+        "fibra": 20
+      },
+      "ocupa": [
+        {
+          "grupo": "grasa",
+          "porciones": 1,
+          "nota": "Aporta ~2 porciones de grasa (harina de almendras): reemplaza la grasa del plato"
+        }
+      ],
+      "nota": "La nutri indicó hasta 4 cdas",
+      "momentos": [
+        "desayuno",
+        "merienda"
+      ]
+    },
+    {
+      "id": "tomate",
+      "nombre": "Tomate",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      },
+      "favorito": true
+    },
+    {
+      "id": "lechuga",
+      "nombre": "Lechuga",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 0.25,
+        "unidad": "planta"
+      },
+      "favorito": true
+    },
+    {
+      "id": "zanahoria",
+      "nombre": "Zanahoria",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      },
+      "favorito": true
+    },
+    {
+      "id": "cebolla",
+      "nombre": "Cebolla",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B",
+      "favorito": true
+    },
+    {
+      "id": "remolacha",
+      "nombre": "Remolacha",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B",
+      "favorito": true
+    },
+    {
+      "id": "brocoli",
+      "nombre": "Brócoli",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "favorito": true
+    },
+    {
+      "id": "acelga",
+      "nombre": "Acelga",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      }
+    },
+    {
+      "id": "espinaca",
+      "nombre": "Espinaca",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      }
+    },
+    {
+      "id": "rucula",
+      "nombre": "Rúcula",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      }
+    },
+    {
+      "id": "morron",
+      "nombre": "Morrón",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "unidad"
+      }
+    },
+    {
+      "id": "calabaza",
+      "nombre": "Calabaza / zapallo",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B",
+      "porcion": {
+        "cantidad": 0.25,
+        "unidad": "unidad"
+      }
+    },
+    {
+      "id": "berenjena",
+      "nombre": "Berenjena",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "unidad"
+      }
+    },
+    {
+      "id": "zapallito",
+      "nombre": "Zapallito / zucchini",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      }
+    },
+    {
+      "id": "pure-tomate",
+      "nombre": "Puré de tomate",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      }
+    },
+    {
+      "id": "apio",
+      "nombre": "Apio",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "coles-bruselas",
+      "nombre": "Coles de Bruselas",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "coliflor",
+      "nombre": "Coliflor",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "esparragos",
+      "nombre": "Espárragos",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "pepino",
+      "nombre": "Pepino",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "rabanitos",
+      "nombre": "Rabanitos",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "radicha",
+      "nombre": "Radicha",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "nabiza",
+      "nombre": "Nabiza",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "A"
+    },
+    {
+      "id": "arvejas-frescas",
+      "nombre": "Arvejas frescas",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B"
+    },
+    {
+      "id": "cebolla-verdeo",
+      "nombre": "Cebolla de verdeo",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B"
+    },
+    {
+      "id": "chauchas",
+      "nombre": "Chauchas",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B"
+    },
+    {
+      "id": "puerro",
+      "nombre": "Puerro",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B"
+    },
+    {
+      "id": "nabo",
+      "nombre": "Nabo",
+      "grupo": "fibra",
+      "tipo": "verdura",
+      "grupoVegetal": "B"
+    },
+    {
+      "id": "naranja",
+      "nombre": "Naranja",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      }
+    },
+    {
+      "id": "mandarina",
+      "nombre": "Mandarina",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "unidad chica"
+      }
+    },
+    {
+      "id": "kiwi",
+      "nombre": "Kiwi",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad"
+      }
+    },
+    {
+      "id": "banana",
+      "nombre": "Banana",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      }
+    },
+    {
+      "id": "frutos-rojos",
+      "nombre": "Frutos rojos",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "taza"
+      }
+    },
+    {
+      "id": "frutillas",
+      "nombre": "Frutillas",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 5,
+        "unidad": "unidad"
+      }
+    },
+    {
+      "id": "manzana",
+      "nombre": "Manzana",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      },
+      "aviso": "estimado"
+    },
+    {
+      "id": "pera",
+      "nombre": "Pera",
+      "grupo": "fibra",
+      "tipo": "fruta",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad chica"
+      },
+      "aviso": "estimado"
+    },
+    {
+      "id": "aceite-oliva",
+      "nombre": "Aceite de oliva",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "cdita",
+        "gramos": 5
+      },
+      "favorito": true,
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "nueces",
+      "nombre": "Nueces",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 2.5,
+        "unidad": "nueces enteras (4-6 mitades)"
+      },
+      "favorito": true,
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "semillas",
+      "nombre": "Semillas (chía, lino, sésamo, girasol, zapallo)",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "cda"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "palta",
+      "nombre": "Palta",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 0.25,
+        "unidad": "unidad"
+      }
+    },
+    {
+      "id": "pasta-mani",
+      "nombre": "Pasta de maní / nuez / almendra",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 2,
+        "unidad": "cdita"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "mani",
+      "nombre": "Maníes",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 10,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "almendras",
+      "nombre": "Almendras",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 5,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "desayuno",
+        "merienda",
+        "colacion"
+      ]
+    },
+    {
+      "id": "aceitunas",
+      "nombre": "Aceitunas",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 10,
+        "unidad": "unidad"
+      },
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "crema-leche",
+      "nombre": "Crema de leche",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "cda"
+      },
+      "aviso": "evitar"
+    },
+    {
+      "id": "manteca",
+      "nombre": "Manteca",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "rulo"
+      },
+      "aviso": "evitar"
+    },
+    {
+      "id": "queso-rallado",
+      "nombre": "Queso rallado / duro",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 30,
+        "unidad": "g"
+      },
+      "aviso": "evitar",
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "mayonesa-light",
+      "nombre": "Mayonesa light",
+      "grupo": "grasa",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "cdita"
+      },
+      "aviso": "evitar",
+      "momentos": [
+        "almuerzo",
+        "cena"
+      ]
+    },
+    {
+      "id": "infusion",
+      "nombre": "Infusión (té, mate, café)",
+      "grupo": "otros"
+    },
+    {
+      "id": "barra-b3st",
+      "nombre": "Barra proteica BNB B3ST!",
+      "grupo": "otros",
+      "porcion": {
+        "cantidad": 1,
+        "unidad": "unidad"
+      }
+    }
+  ],
+  "comidas": [
+    {
+      "id": "desayuno",
+      "nombre": "Desayuno",
+      "variantes": [
+        {
+          "id": "plan",
+          "nombre": "Plato del plan",
+          "items": [
+            {
+              "fijo": "infusion"
+            },
+            {
+              "grupo": "hc",
+              "porciones": 1,
+              "sugeridos": [
+                "pan-integral"
+              ]
+            },
+            {
+              "grupo": "proteina",
+              "nivel": "media",
+              "porciones": 2,
+              "sugeridos": [
+                "huevo"
+              ]
+            },
+            {
+              "grupo": "fibra",
+              "tipo": "fruta",
+              "porciones": 1,
+              "sugeridos": [
+                "mandarina",
+                "naranja",
+                "kiwi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rapida",
+          "nombre": "Opción rápida",
+          "items": [
+            {
+              "fijo": "infusion"
+            },
+            {
+              "fijo": "barra-b3st"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "almuerzo",
+      "nombre": "Almuerzo",
+      "variantes": [
+        {
+          "id": "plan",
+          "nombre": "Plato del plan",
+          "items": [
+            {
+              "grupo": "proteina",
+              "nivel": "alta",
+              "porciones": 1.5,
+              "sugeridos": [
+                "pollo"
+              ]
+            },
+            {
+              "grupo": "fibra",
+              "tipo": "verdura",
+              "libre": "medio plato",
+              "sugerirCantidad": 3
+            },
+            {
+              "grupo": "hc",
+              "porciones": 1,
+              "sugeridos": [
+                "papa",
+                "batata"
+              ]
+            },
+            {
+              "grupo": "grasa",
+              "porciones": 3,
+              "sugeridos": [
+                "aceite-oliva"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "merienda",
+      "nombre": "Merienda",
+      "variantes": [
+        {
+          "id": "plan",
+          "nombre": "Plato del plan",
+          "items": [
+            {
+              "grupo": "proteina",
+              "nivel": "media",
+              "porciones": 1,
+              "sugeridos": [
+                "yogur-casero"
+              ]
+            },
+            {
+              "grupo": "hc",
+              "porciones": 1,
+              "sugeridos": [
+                "granola"
+              ]
+            },
+            {
+              "grupo": "fibra",
+              "tipo": "fruta",
+              "porciones": 1,
+              "sugeridos": [
+                "manzana",
+                "pera",
+                "frutos-rojos"
+              ]
+            },
+            {
+              "grupo": "grasa",
+              "porciones": 1,
+              "sugeridos": [
+                "semillas",
+                "nueces"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rapida",
+          "nombre": "Opción rápida",
+          "items": [
+            {
+              "fijo": "infusion"
+            },
+            {
+              "fijo": "barra-b3st"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cena",
+      "nombre": "Cena",
+      "variantes": [
+        {
+          "id": "plan",
+          "nombre": "Plato del plan",
+          "items": [
+            {
+              "grupo": "proteina",
+              "nivel": "alta",
+              "porciones": 1.5,
+              "sugeridos": [
+                "merluza",
+                "atun"
+              ]
+            },
+            {
+              "grupo": "fibra",
+              "tipo": "verdura",
+              "libre": "medio plato (cocidas)",
+              "sugerirCantidad": 3
+            },
+            {
+              "grupo": "grasa",
+              "porciones": 3,
+              "sugeridos": [
+                "aceite-oliva"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colacion",
+      "nombre": "Colación",
+      "variantes": [
+        {
+          "id": "fruta",
+          "nombre": "Fruta",
+          "items": [
+            {
+              "grupo": "fibra",
+              "tipo": "fruta",
+              "porciones": 1,
+              "sugeridos": [
+                "banana"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "proteina",
+          "nombre": "Proteína",
+          "items": [
+            {
+              "grupo": "proteina",
+              "nivel": "media",
+              "porciones": 1,
+              "sugeridos": [
+                "port-salut",
+                "yogur-bebible"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
