@@ -54,7 +54,8 @@
     "moderado-grasa": "Moderado en grasa",
     "evitar": "Grasa saturada: evitar",
     "conversion-nivel": "No es la equivalencia recomendada por la tabla (cantidad convertida por gramos de proteína)",
-    "estimado": "Valor estimado, confirmar con la nutri"
+    "estimado": "Valor estimado, confirmar con la nutri",
+    "no-recomendado": "No es lo recomendable"
   },
   "alimentos": [
     {
@@ -821,13 +822,13 @@
     },
     {
       "id": "port-salut",
-      "nombre": "Queso Port Salut light (porción chica)",
+      "nombre": "Queso Port Salut light",
       "emoji": "🧀",
       "grupo": "proteina",
       "nivel": "media",
       "porcion": {
         "cantidad": 1,
-        "unidad": "casette"
+        "unidad": "feta"
       },
       "aviso": "moderado-grasa",
       "favorito": true,
@@ -1440,6 +1441,21 @@
         "cantidad": 1,
         "unidad": "unidad"
       }
+    },
+    {
+      "id": "media-barra-b3st",
+      "nombre": "Barra proteica BNB B3ST! (media)",
+      "emoji": "🍫",
+      "grupo": "proteina",
+      "nivel": "media",
+      "porcion": {
+        "cantidad": 0.5,
+        "unidad": "barra"
+      },
+      "aviso": "no-recomendado",
+      "momentos": [
+        "colacion"
+      ]
     }
   ],
   "comidas": [
@@ -1664,9 +1680,13 @@
               "nivel": "media",
               "porciones": 1,
               "sugeridos": [
+                "huevo",
+                "yogur-casero",
+                "yogur-bebible",
                 "port-salut",
-                "yogur-bebible"
-              ]
+                "media-barra-b3st"
+              ],
+              "soloSugeridos": true
             }
           ]
         }

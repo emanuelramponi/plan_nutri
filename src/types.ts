@@ -51,6 +51,7 @@ export interface ItemGrupo {
   tipo?: TipoFibra
   porciones: number
   sugeridos?: string[]
+  soloSugeridos?: boolean
 }
 
 export interface ItemLibre {

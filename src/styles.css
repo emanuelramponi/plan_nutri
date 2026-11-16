@@ -67,7 +67,7 @@ button {
 }
 
 .cabecera h1 {
-  margin: 0 0 12px;
+  margin: 0;
   font-size: 1.5rem;
 }
 
@@ -527,4 +527,43 @@ button {
   text-align: center;
   color: var(--texto-suave);
   margin-top: 24px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.chip--activo {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: var(--acento-texto);
+}
+
+.cabecera__fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cabecera__fila h1 {
+  margin: 0;
+}
+
+.boton-editar {
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
 }

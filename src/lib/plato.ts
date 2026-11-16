@@ -39,8 +39,9 @@ export const nombreGrupo = (plan: Plan, id: string) => plan.grupos.find((g) => g
 export function candidatos(plan: Plan, item: ItemGrupo | ItemLibre): Alimento[] {
   const sugeridos = 'sugeridos' in item ? item.sugeridos ?? [] : []
   const nivel = 'nivel' in item ? item.nivel : undefined
-  const lista = plan.alimentos.filter(
-    (a) => a.grupo === item.grupo && (!item.tipo || a.tipo === item.tipo),
+  const soloSugeridos = 'soloSugeridos' in item && !!item.soloSugeridos
+  const lista = plan.alimentos.filter((a) =>
+    soloSugeridos ? sugeridos.includes(a.id) : a.grupo === item.grupo && (!item.tipo || a.tipo === item.tipo),
   )
   const puntaje = (a: Alimento) =>
     (nivel && a.nivel && a.nivel !== nivel ? 100 : 0) -
@@ -79,6 +80,7 @@ export function armarPlato(plan: Plan, comidaId: string, variante: Variante): Se
       (a) =>
         vaEnComida(a, comidaId) &&
         a.aviso !== 'evitar' &&
+        a.aviso !== 'no-recomendado' &&
         !(a.ocupa ?? []).some((o) => !presentes.has(o.grupo)),
     )
 

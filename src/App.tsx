@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { PanelAlimentos } from './components/PanelAlimentos'
+import { Editor } from './editor/Editor'
 import { Plato, nombreCorto } from './components/Plato'
 import { cargarPlanRemoto, planEmbebido } from './lib/cargarPlan'
 import { armarPlato, calcularPlato } from './lib/plato'
@@ -31,6 +32,7 @@ export default function App() {
   const [comidaId, setComidaId] = useState(() => comidaSegunHora(planEmbebido))
   const [varianteIds, setVarianteIds] = useState<Record<string, string>>({})
   const [platos, setPlatos] = useState<Record<string, Seleccion[]>>(leerGuardado)
+  const [editando, setEditando] = useState(false)
 
   useEffect(() => {
     cargarPlanRemoto().then((p) => p && setPlan(p))
@@ -74,10 +76,23 @@ export default function App() {
       })
     : []
 
+  if (editando) {
+    return (
+      <div className="app">
+        <Editor onGuardado={setPlan} onSalir={() => setEditando(false)} />
+      </div>
+    )
+  }
+
   return (
     <div className="app">
       <header className="cabecera">
-        <h1>Mi plan</h1>
+        <div className="cabecera__fila">
+          <h1>Mi plan</h1>
+          <button className="boton-editar" onClick={() => { setAbierto(null); setEditando(true) }}>
+            ⚙️ Editar plan
+          </button>
+        </div>
         <nav className="comidas" aria-label="Comidas">
           {plan.comidas.map((c) => (
             <button
