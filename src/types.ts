@@ -58,6 +58,7 @@ export interface ItemLibre {
   tipo?: TipoFibra
   libre: string
   sugerirCantidad?: number
+  porDefecto?: string[]
 }
 
 export interface ItemFijo {

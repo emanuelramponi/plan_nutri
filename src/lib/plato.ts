@@ -83,6 +83,7 @@ export function armarPlato(plan: Plan, comidaId: string, variante: Variante): Se
     )
 
     if (esLibre(item)) {
+      if (item.porDefecto?.length) return [...item.porDefecto]
       const cant = item.sugerirCantidad ?? 3
       const elegidos: string[] = []
       let pool = opciones.map((a) => ({ valor: a.id, peso: priorizar && a.favorito ? 4 : 1 }))

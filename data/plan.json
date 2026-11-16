@@ -1515,7 +1515,12 @@
               "grupo": "fibra",
               "tipo": "verdura",
               "libre": "medio plato",
-              "sugerirCantidad": 3
+              "sugerirCantidad": 3,
+              "porDefecto": [
+                "tomate",
+                "lechuga",
+                "cebolla"
+              ]
             },
             {
               "grupo": "hc",
@@ -1614,7 +1619,12 @@
               "grupo": "fibra",
               "tipo": "verdura",
               "libre": "medio plato (cocidas)",
-              "sugerirCantidad": 3
+              "sugerirCantidad": 3,
+              "porDefecto": [
+                "tomate",
+                "lechuga",
+                "cebolla"
+              ]
             },
             {
               "grupo": "grasa",
