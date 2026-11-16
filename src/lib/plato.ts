@@ -20,8 +20,15 @@ export interface LineaPlato {
   cantidad?: string
   gramos?: string
   avisos: string[]
+  etiquetaAviso?: string
   notas: string[]
   cubierto?: boolean
+}
+
+const ETIQUETAS_AVISO: Record<string, string> = {
+  'moderado-grasa': 'Moderado en grasa',
+  evitar: 'Evitar',
+  'no-recomendado': 'No recomendable',
 }
 
 export interface PlatoCalculado {
@@ -183,7 +190,8 @@ export function calcularPlato(plan: Plan, variante: Variante, seleccion: Selecci
       }
       if (p.gramos && p.unidad !== 'g') gramos = `≈ ${Math.round(p.gramos * mult)} g`
     }
-    return { item, alimento, cantidad, gramos, avisos, notas, cubierto }
+    const etiquetaAviso = alimento.aviso ? ETIQUETAS_AVISO[alimento.aviso] : undefined
+    return { item, alimento, cantidad, gramos, avisos, notas, cubierto, etiquetaAviso }
   })
 
   return { lineas, avisosGenerales }

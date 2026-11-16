@@ -129,7 +129,8 @@ function EtiquetaSector({ s, linea, onAbrir }: { s: Sector; linea?: LineaPlato; 
       </span>
       <span className="etiqueta__nombre">{nombre}</span>
       <span className="etiqueta__cantidad">{linea.cubierto ? linea.notas[0] ?? 'Cubierto' : linea.cantidad}</span>
-      {tieneAviso && <span className="etiqueta__alerta" aria-label="Tiene avisos">⚠</span>}
+      {linea.etiquetaAviso && !linea.cubierto && <span className="etiqueta__pastilla">⚠ {linea.etiquetaAviso}</span>}
+      {tieneAviso && !linea.etiquetaAviso && <span className="etiqueta__alerta" aria-label="Tiene avisos">⚠</span>}
     </>
   )
 
