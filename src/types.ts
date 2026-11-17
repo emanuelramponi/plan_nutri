@@ -29,6 +29,13 @@ export interface Alimento {
   nota?: string
   ocupa?: Ocupa[]
   momentos?: string[]
+  referencia?: Referencia
+}
+
+export interface Referencia {
+  cantidad: number
+  unidad: string
+  nota?: string
 }
 
 export interface NivelInfo {

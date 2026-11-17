@@ -250,6 +250,12 @@ button {
   pointer-events: none;
 }
 
+.etiqueta__referencia {
+  font-size: clamp(0.64rem, 2.7vw, 0.78rem);
+  font-style: italic;
+  opacity: 0.8;
+}
+
 .etiqueta__alerta {
   position: absolute;
   top: -4px;

@@ -22,6 +22,13 @@ const PLURALES: Record<string, string> = {
   porción: 'porciones',
   planta: 'plantas',
   masa: 'masas',
+  palma: 'palmas',
+  'papa chica': 'papas chicas',
+  'batata chica': 'batatas chicas',
+  lata: 'latas',
+  pote: 'potes',
+  'cda sopera': 'cdas soperas',
+  choclo: 'choclos',
 }
 
 export function formatearNumero(n: number): string {

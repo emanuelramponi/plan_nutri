@@ -19,6 +19,7 @@ export interface LineaPlato {
   alimentos?: Alimento[]
   cantidad?: string
   gramos?: string
+  referencia?: string
   avisos: string[]
   etiquetaAviso?: string
   notas: string[]
@@ -179,6 +180,7 @@ export function calcularPlato(plan: Plan, variante: Variante, seleccion: Selecci
 
     let cantidad: string | undefined
     let gramos: string | undefined
+    let referencia: string | undefined
     if (alimento.porcion && !cubierto) {
       const p = alimento.porcion
       let total = p.cantidad * mult
@@ -189,9 +191,14 @@ export function calcularPlato(plan: Plan, variante: Variante, seleccion: Selecci
         cantidad = formatearCantidad(total, p.unidad)
       }
       if (p.gramos && p.unidad !== 'g') gramos = `≈ ${Math.round(p.gramos * mult)} g`
+      if (alimento.referencia) {
+        const r = alimento.referencia
+        const total = Math.round(r.cantidad * mult * 4) / 4
+        referencia = `≈ ${formatearCantidad(total, r.unidad)}${r.nota ? ` ${r.nota}` : ''}`
+      }
     }
     const etiquetaAviso = alimento.aviso ? ETIQUETAS_AVISO[alimento.aviso] : undefined
-    return { item, alimento, cantidad, gramos, avisos, notas, cubierto, etiquetaAviso }
+    return { item, alimento, cantidad, gramos, referencia, avisos, notas, cubierto, etiquetaAviso }
   })
 
   return { lineas, avisosGenerales }

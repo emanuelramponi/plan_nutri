@@ -190,7 +190,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 3,
+        "unidad": "cda sopera"
+      }
     },
     {
       "id": "quinoa",
@@ -205,7 +209,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 3,
+        "unidad": "cda sopera"
+      }
     },
     {
       "id": "polenta",
@@ -220,7 +228,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 3,
+        "unidad": "cda sopera"
+      }
     },
     {
       "id": "mijo",
@@ -235,7 +247,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 3,
+        "unidad": "cda sopera"
+      }
     },
     {
       "id": "cuscus",
@@ -250,7 +266,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 3,
+        "unidad": "cda sopera"
+      }
     },
     {
       "id": "cebada",
@@ -265,7 +285,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 3,
+        "unidad": "cda sopera"
+      }
     },
     {
       "id": "fideos-integrales",
@@ -312,7 +336,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "papa chica"
+      }
     },
     {
       "id": "batata",
@@ -327,7 +355,11 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "batata chica"
+      }
     },
     {
       "id": "choclo",
@@ -342,7 +374,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 0.5,
+        "unidad": "choclo",
+        "nota": "mediano"
+      }
     },
     {
       "id": "barrita-cereal",
@@ -442,7 +479,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 0.75,
+        "unidad": "lata",
+        "nota": "(escurrido)"
+      }
     },
     {
       "id": "merluza",
@@ -457,7 +499,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "arrolladito-merluza",
@@ -473,7 +520,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "gatuzo",
@@ -488,7 +540,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "abadejo",
@@ -503,7 +560,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "lenguado",
@@ -518,7 +580,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "pollo",
@@ -534,7 +601,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "solomillo-cerdo",
@@ -550,7 +622,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "bola-lomo-cerdo",
@@ -566,7 +643,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "carne-magra",
@@ -582,7 +664,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "milanesa-bola-lomo",
@@ -607,7 +694,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "carne-trabajo",
@@ -625,7 +717,12 @@
       "momentos": [
         "almuerzo",
         "cena"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "palma",
+        "nota": "(cocido)"
+      }
     },
     {
       "id": "proteina-polvo",
@@ -704,7 +801,12 @@
         "desayuno",
         "merienda",
         "colacion"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "pote",
+        "nota": "(150-200 ml)"
+      }
     },
     {
       "id": "yogur-bebible",
@@ -721,7 +823,12 @@
         "desayuno",
         "merienda",
         "colacion"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 1,
+        "unidad": "pote",
+        "nota": "(150-200 ml)"
+      }
     },
     {
       "id": "leche",
@@ -737,7 +844,11 @@
         "desayuno",
         "merienda",
         "colacion"
-      ]
+      ],
+      "referencia": {
+        "cantidad": 200,
+        "unidad": "ml"
+      }
     },
     {
       "id": "leche-polvo",

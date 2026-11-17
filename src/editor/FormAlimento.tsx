@@ -158,6 +158,47 @@ export function FormAlimento({ plan, alimento, nuevo, onGuardar, onBorrar, onCer
             )}
           </fieldset>
 
+          <fieldset className="campo">
+            <legend>Referencia visual por porción (opcional, ej. 1 palma)</legend>
+            <div className="form__fila">
+              <label className="campo campo--chico">
+                <span>Cantidad</span>
+                <input
+                  type="number"
+                  inputMode="decimal"
+                  step="any"
+                  min="0"
+                  value={a.referencia?.cantidad ?? ''}
+                  onChange={(e) =>
+                    set({
+                      referencia: e.target.value
+                        ? { unidad: a.referencia?.unidad ?? '', ...a.referencia, cantidad: Number(e.target.value) }
+                        : undefined,
+                    })
+                  }
+                />
+              </label>
+              <label className="campo campo--flex">
+                <span>Unidad</span>
+                <input
+                  value={a.referencia?.unidad ?? ''}
+                  placeholder="palma, papa chica…"
+                  onChange={(e) => set({ referencia: { cantidad: a.referencia?.cantidad ?? 1, ...a.referencia, unidad: e.target.value } })}
+                />
+              </label>
+              <label className="campo campo--flex">
+                <span>Nota</span>
+                <input
+                  value={a.referencia?.nota ?? ''}
+                  placeholder="(cocido)"
+                  onChange={(e) =>
+                    a.referencia && set({ referencia: { ...a.referencia, nota: e.target.value || undefined } })
+                  }
+                />
+              </label>
+            </div>
+          </fieldset>
+
           <label className="check">
             <input type="checkbox" checked={!!a.favorito} onChange={(e) => set({ favorito: e.target.checked || undefined })} />
             ★ Favorito (el azar lo prioriza)
@@ -217,7 +258,11 @@ export function FormAlimento({ plan, alimento, nuevo, onGuardar, onBorrar, onCer
           )}
         </div>
 
-        <button className="panel__listo" onClick={() => onGuardar(a)} disabled={!a.nombre.trim()}>
+        <button
+          className="panel__listo"
+          onClick={() => onGuardar(a.referencia && !a.referencia.unidad.trim() ? { ...a, referencia: undefined } : a)}
+          disabled={!a.nombre.trim()}
+        >
           {nuevo ? 'Agregar' : 'Aplicar cambios'}
         </button>
       </aside>
